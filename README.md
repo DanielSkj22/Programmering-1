@@ -1,2 +1,2 @@
 # Programmering-1
-Øvingene til dette faget
+Dette repoet inneholder alle øvingene i dette faget til d.d.
