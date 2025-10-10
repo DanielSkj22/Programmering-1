@@ -1,6 +1,6 @@
 import java.util.Random;
 public class matrise {
-    public int b = 3;
+    public int b = 4;
     public int mat[][] = new int[b][b];
     public int mat1[][] = new int [b][b];
     public int result[][] = new int [b][b];
