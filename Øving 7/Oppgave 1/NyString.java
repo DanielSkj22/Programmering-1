@@ -3,7 +3,6 @@ public class NyString {
     public String setning;
     public Scanner sc = new Scanner(System.in);
     public String u = sc.nextLine().toLowerCase();
-    public boolean f = true; 
 
     public NyString(String setning){
         this.setning = setning;
