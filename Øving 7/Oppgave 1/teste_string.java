@@ -6,7 +6,7 @@ public class teste_string {
     String setning = sc.nextLine().toLowerCase();
     NyString obj = new NyString(setning);
     
-    obj.uten();
+    //obj.uten();
     obj.forko();
 
     sc.close();

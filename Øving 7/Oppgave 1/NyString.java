@@ -1,8 +1,9 @@
 import java.util.Scanner;
 public class NyString {
     public String setning;
-    Scanner sc = new Scanner(System.in);
-    String u = sc.nextLine().toLowerCase();
+    public Scanner sc = new Scanner(System.in);
+    public String u = sc.nextLine().toLowerCase();
+    public boolean f = true; 
 
     public NyString(String setning){
         this.setning = setning;
@@ -17,10 +18,13 @@ public class NyString {
     System.out.println();
     }
     public void forko(){
-        String regex = "";
-        String[] fork = setning.split(regex);
-        for (String f : fork) {
-            System.out.print(f);
+        String regex = " ";
+        String[] my = setning.split(regex);
+        for(int i =0; i<= setning.length(); i++){
+             String f = my[i];
+             System.out.println(f);
+            }
         }
+
     }
-}
+
