@@ -19,12 +19,13 @@ public class NyString {
     }
     public void forko(){
         String regex = " ";
-        String[] my = setning.split(regex);
-        for(int i =0; i<= setning.length(); i++){
-             String f = my[i];
-             System.out.println(f);
-            }
+        String[] me = setning.split(regex);
+        int lengde = me.length;
+        for(int i = 0; i < lengde; i++){
+            char resu = me[i].charAt(0);
+            System.out.print(resu+" ");
         }
-
     }
+}
+
 
