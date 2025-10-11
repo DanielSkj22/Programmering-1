@@ -4,6 +4,7 @@ public class tekst {
     public Scanner sc = new Scanner(System.in);
     public String ting;
     public int resu;
+    public String p;
     
     public tekst(String ting){
         this.ting = ting;
@@ -27,16 +28,15 @@ public class tekst {
         System.out.printf("%.2f%n",snitt);
     }
     public void fleregjen(){
-        String regex = " ";
+        String regex = "[.]";
+        String regex1 = " ";
         String[] me = ting.split(regex);
         double lengde = me.length;
         for(int i = 0; i < lengde; i++){
-            String l = me[i];
-            resu += l.length();
+            p = me[i];
+            me = ting.split(regex1);
+            System.out.println(p.length());
         }
-        double snitt = resu /lengde;
-        System.out.printf("%.2f%n",snitt);
-        System.out.println();
     }
     public void normal(){
         System.out.println(ting);

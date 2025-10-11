@@ -6,11 +6,11 @@ public class test_tekst {
         String ting = sc.nextLine();
         tekst obj = new tekst(ting);
 
-        obj.antall();
-        obj.gjen();
-        //obj.fleregjen();
-        obj.normal();
-        obj.upper();
+        //obj.antall();
+        //obj.gjen();
+        obj.fleregjen();
+        //obj.normal();
+        //obj.upper();
 
         sc.close();
     
