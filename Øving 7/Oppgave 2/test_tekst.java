@@ -10,7 +10,7 @@ public class test_tekst {
 
         //obj.antall();
         //obj.gjen();
-        //obj.fleregjen();
+        obj.fleregjen();
         obj.skifte();
         //obj.normal();
         //obj.upper();

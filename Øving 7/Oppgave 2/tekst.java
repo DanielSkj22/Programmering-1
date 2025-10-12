@@ -40,6 +40,9 @@ public class tekst {
         for(int i = 0; i < lengde; i++){
             String h[] = me[i].split(regex);
             len += h.length;
+            if(i > 0){
+                len = len-1;
+            }
         }
         double snitt = len /lengde;
         System.out.printf("%.2f%n",snitt);
@@ -47,14 +50,18 @@ public class tekst {
     public void skifte(){
         String mindre = ting.toLowerCase();
         String regex = " ";
-        ja[0] = ta;
+        String[] ja = ta.split(regex);
         String[] me = mindre.split(regex);
         double lengde = me.length;
         for(int i = 0; i < lengde; i++){
-            if(me[i] == ja[0]){
-                System.err.println(bort);
+            if(me[i].equals(ja[0])){
+                System.out.print(bort + " ");
+            }
+            else{
+                System.out.print(me[i] + " ");
             }
         }
+        System.out.println();
     }
     public void normal(){
         System.out.println(ting);
