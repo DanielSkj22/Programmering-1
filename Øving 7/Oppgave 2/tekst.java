@@ -27,17 +27,18 @@ public class tekst {
         System.out.printf("%.2f%n",snitt);
     }
     public void fleregjen(){
-        String regex = "[.:!?]";
-        String[] me = ting.split(regex);
+        String regex = " ";
+        String regex1 = "[.:!?]";
+        double len = 0;
+        String[] me = ting.split(regex1);
         double lengde = me.length;
         for(int i = 0; i < lengde; i++){
-            if(){
-            String l = me[i];
-            System.out.println(l);
-            resu += l.length();
-            }
+            System.out.println(me[i]);
+            String h[] = me[i].split(regex);
+            len += h.length;
         }
-        System.out.println(resu);
+        double snitt = len /lengde;
+        System.out.printf("%.2f%n",snitt);
     }
     public void normal(){
         System.out.println(ting);
@@ -47,4 +48,5 @@ public class tekst {
         System.out.println(upper);
     }
     }
+
 
