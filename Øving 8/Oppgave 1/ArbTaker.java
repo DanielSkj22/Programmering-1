@@ -2,7 +2,7 @@ public class ArbTaker {
     Person obj = new Person();
     private String arbNr;
     private String ansÅr;
-    private String månedLønn;
+    private int månedLønn;
     private String skattPro;
 
     public String getarbNr(){
@@ -11,7 +11,7 @@ public class ArbTaker {
      public String getansÅr(){
         return ansÅr;
     }
-     public String getmånedLønn(){
+     public int getmånedLønn(){
         return månedLønn;
     }
      public String getskattPro(){
@@ -23,10 +23,23 @@ public class ArbTaker {
     public void setansÅr(String newÅR){
         this.ansÅr = newÅR;
     }
-    public void setmånedLønn(String newLønn){
+    public void setmånedLønn(int newLønn){
         this.månedLønn = newLønn;
     }
     public void setskattPro(String newPro){
         this.skattPro = newPro;
+    }
+    public void taker(){
+        obj.setName("Daniel");
+        obj.setName2("Skjørtorp");
+        System.out.println(obj.getName1()+" "+ obj.getName());
+    }
+    public void årslønn(){
+        System.out.println("Arbeids nummer: " + arbNr);
+        System.out.println("Årslønn: " + månedLønn*12);
+    }
+    public void alder(){
+        obj.setÅr("23");
+        System.out.println(obj.getÅr()+ " År");
     }
 }
