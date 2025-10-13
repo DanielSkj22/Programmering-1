@@ -18,7 +18,7 @@ public class tekst {
         String regex = " ";
         String[] me = ting.split(regex);
         int lengde = me.length;
-        System.out.println(lengde);
+        System.out.println("Det er " + lengde + " antall ord");
         }
     public void gjen(){
         String regex = " ";
@@ -29,6 +29,7 @@ public class tekst {
             resu += l.length();
         }
         double snitt = resu /lengde;
+        System.out.print("Gjennomsnittlig ordlengde er ");
         System.out.printf("%.2f%n",snitt);
     }
     public void fleregjen(){
@@ -45,6 +46,7 @@ public class tekst {
             }
         }
         double snitt = len /lengde;
+        System.out.print("Gjennomsnittlig ordmengde i hver periode ");
         System.out.printf("%.2f%n",snitt);
     }
     public void skifte(){
@@ -53,6 +55,7 @@ public class tekst {
         String[] ja = ta.split(regex);
         String[] me = mindre.split(regex);
         double lengde = me.length;
+        System.out.print("Utskift: ");
         for(int i = 0; i < lengde; i++){
             if(me[i].equals(ja[0])){
                 System.out.print(bort + " ");
@@ -64,10 +67,12 @@ public class tekst {
         System.out.println();
     }
     public void normal(){
+        System.out.print("Normal: ");
         System.out.println(ting);
     }
     public void upper(){
         String upper = ting.toUpperCase();
+        System.out.print("Caps lock: ");
         System.out.println(upper);
     }
 }

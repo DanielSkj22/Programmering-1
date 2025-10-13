@@ -8,12 +8,12 @@ public class test_tekst {
         String bort = sc.nextLine().toLowerCase();
         tekst obj = new tekst(ting, ta, bort);
 
-        //obj.antall();
-        //obj.gjen();
+        obj.antall();
+        obj.gjen();
         obj.fleregjen();
         obj.skifte();
-        //obj.normal();
-        //obj.upper();
+        obj.normal();
+        obj.upper();
 
         sc.close();
     
