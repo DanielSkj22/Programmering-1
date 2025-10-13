@@ -1,32 +1,32 @@
 public class ArbTaker {
     Person obj = new Person();
     private String arbNr;
-    private String ansÅr;
+    private int ansÅr;
     private int månedLønn;
-    private String skattPro;
+    private double skattPro;
 
     public String getarbNr(){
         return arbNr;
     }
-     public String getansÅr(){
+     public int getansÅr(){
         return ansÅr;
     }
      public int getmånedLønn(){
         return månedLønn;
     }
-     public String getskattPro(){
+     public double getskattPro(){
         return skattPro;
     }
     public void setarbNr(String newNR){
         this.arbNr = newNR;
     }
-    public void setansÅr(String newÅR){
+    public void setansÅr(int newÅR){
         this.ansÅr = newÅR;
     }
     public void setmånedLønn(int newLønn){
         this.månedLønn = newLønn;
     }
-    public void setskattPro(String newPro){
+    public void setskattPro(double newPro){
         this.skattPro = newPro;
     }
     public void taker(){
@@ -41,5 +41,21 @@ public class ArbTaker {
     public void alder(){
         obj.setÅr("23");
         System.out.println(obj.getÅr()+ " År");
+    }
+    public void trekk(){
+        System.out.println("Skattetrekk hver måned: " + månedLønn*skattPro);
+    }
+    public void årTrekk(){
+        double trekk = månedLønn*skattPro;
+        double trekken = trekk * 10;
+        System.out.println("Skattetrekk på et helt år: " + (trekken + (trekk/2)));
+    }
+    public void ansatt(){
+        System.out.println(ansÅr+" År ansatt");
+    }
+    public void veteran(){
+        if(ansÅr > 4){
+            System.out.println("Veteran");
+        }
     }
 }
