@@ -3,21 +3,37 @@ public class person_test {
     public static void main(String[] args) {
         ArbTaker obj = new ArbTaker();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Arbeidsnummer");
-        obj.setarbNr(sc.nextLine());
+        boolean run = true;
+        obj.setarbNr("123");
+        obj.setansÅr(2019);
+
+        while(run){
         System.out.println("Månedslønn");
         obj.setmånedLønn(sc.nextInt());
         System.out.println("Skatteprosent");
         obj.setskattPro(sc.nextDouble());
-        System.out.println("Ansettelses år");
-        obj.setansÅr(sc.nextInt());
+        int input = sc.nextInt();
+        switch (input) {
+            case 1:
+                obj.taker();
+                obj.alder();
+                break;
+            case 2:
+                obj.ansatt();
+                obj.veteran();
+            case 3:
+                obj.årslønn();
+                break;
+            case 4:
+                obj.trekk();
+                obj.årTrekk();
+                break;
+            
+            default:
+                break;
+        }
+        }
 
-        obj.trekk();
-        obj.årslønn();
-        obj.årTrekk();
-        obj.taker();
-        obj.alder();
-        obj.ansatt();
-        obj.veteran();
+        sc.close();
     }
 }

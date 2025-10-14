@@ -33,6 +33,7 @@ public class ArbTaker {
     public void taker(){
         obj.setName("Daniel");
         obj.setName2("Skjørtorp");
+        System.out.println("Arbeider nummer: " + arbNr);
         System.out.println(obj.getName1()+" "+ obj.getName());
     }
     public void årslønn(){
@@ -57,8 +58,10 @@ public class ArbTaker {
         System.out.println(-(ansÅr-år)+" År ansatt");
     }
     public void veteran(){
-        if(ansÅr > 4){
-            System.out.println("Veteran");
+        GregorianCalendar kalender = new GregorianCalendar();
+        int år = kalender.get(java.util.Calendar.YEAR);
+        if(-(ansÅr-år) > 4){
+            System.out.println("Senior Dev");
         }
     }
 }
