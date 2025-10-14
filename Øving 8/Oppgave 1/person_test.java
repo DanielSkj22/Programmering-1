@@ -8,7 +8,7 @@ public class person_test {
         obj.setansÅr(2019);
 
         while(run){
-        System.out.println();
+        System.out.println("*******************");
         System.out.println("Månedslønn");
         obj.setmånedLønn(sc.nextInt());
         System.out.println("Skatteprosent");
