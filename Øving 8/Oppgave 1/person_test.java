@@ -1,10 +1,16 @@
+import java.util.Scanner;
 public class person_test {
     public static void main(String[] args) {
         ArbTaker obj = new ArbTaker();
-        obj.setarbNr("1234");
-        obj.setmånedLønn(35000);
-        obj.setskattPro(0.30);
-        obj.setansÅr(5);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Arbeidsnummer");
+        obj.setarbNr(sc.nextLine());
+        System.out.println("Månedslønn");
+        obj.setmånedLønn(sc.nextInt());
+        System.out.println("Skatteprosent");
+        obj.setskattPro(sc.nextDouble());
+        System.out.println("Ansettelses år");
+        obj.setansÅr(sc.nextInt());
 
         obj.trekk();
         obj.årslønn();

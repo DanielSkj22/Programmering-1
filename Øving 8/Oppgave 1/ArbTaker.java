@@ -1,3 +1,4 @@
+import java.util.GregorianCalendar;
 public class ArbTaker {
     Person obj = new Person();
     private String arbNr;
@@ -51,7 +52,9 @@ public class ArbTaker {
         System.out.println("Skattetrekk på et helt år: " + (trekken + (trekk/2)));
     }
     public void ansatt(){
-        System.out.println(ansÅr+" År ansatt");
+        GregorianCalendar kalender = new GregorianCalendar();
+        int år = kalender.get(java.util.Calendar.YEAR);
+        System.out.println(-(ansÅr-år)+" År ansatt");
     }
     public void veteran(){
         if(ansÅr > 4){
