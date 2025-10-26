@@ -7,13 +7,15 @@ public class Student {
     private Scanner sc = new Scanner(System.in);
 
     public String getNavn(){
+            navn = sc.nextLine();
             return navn;
         }
     public int getAntOppg(){
             return antOppg;
         }
     public void økAntOppg(int økning){
-        antOppg += 1;
+        int antall = sc.nextInt(); 
+        antOppg = antOppg + antall;
     }
     public String toString(){
         return navn + " "+ antOppg;
