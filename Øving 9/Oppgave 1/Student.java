@@ -14,6 +14,7 @@ public class Student {
             return antOppg;
         }
     public void økAntOppg(){
+        antOppg = 0;
         int antall = sc.nextInt(); 
         antOppg = antOppg + antall;
     }
