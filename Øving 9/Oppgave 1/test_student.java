@@ -7,18 +7,28 @@ public class test_student {
         OppgaveOversikt obj2 = new OppgaveOversikt(null, null);
         Student obj = new Student();
         boolean run = true;
+        int hvilken = 0;
 
         while (run) {
         System.out.println("Tast 1 for registrering");
-        System.out.println("Tast 3 for antall studenter");
+        System.out.println("Tast 3 for antall studenter" + " Tast 4 for å sjekke oppgaver til en student");
         System.out.println("Tast 5 for å avslutte");
         int input = sc.nextInt();
             switch (input) {
                 case 1:
                 obj2.studenter.add(obj.getNavn());
+                obj2.oppgaverG.add(0);
                 System.out.println(obj2.studenter);
                     break;
                 case 2:
+                System.out.println("Hvilken Student");
+                System.out.println(obj2.studenter);
+                hvilken = sc.nextInt();
+                hvilken += -1;
+                obj.økAntOppg();
+                obj2.oppgaverG.add(hvilken, obj.getAntOppg());
+                obj2.oppgaverG.removeLast();
+                System.out.println(obj2.oppgaverG);
                     break;
                 case 3:
                 int antall = obj2.studenter.size();
@@ -27,11 +37,12 @@ public class test_student {
                 case 4:
                 System.out.println("Hvilken Student");
                 System.out.println(obj2.studenter);
-                int hvilken = sc.nextInt();
+                hvilken = sc.nextInt();
                 hvilken += -1;
-                System.out.println(obj2.studenter.get(hvilken));
+                System.out.println(obj2.studenter.get(hvilken) +" " + obj2.oppgaverG.get(hvilken));
                     break;
                 default:
+                    System.out.println(obj2.oppgaverG);
                     run = false;
                     break;
             }

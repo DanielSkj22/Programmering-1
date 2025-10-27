@@ -13,7 +13,7 @@ public class Student {
     public int getAntOppg(){
             return antOppg;
         }
-    public void økAntOppg(int økning){
+    public void økAntOppg(){
         int antall = sc.nextInt(); 
         antOppg = antOppg + antall;
     }
