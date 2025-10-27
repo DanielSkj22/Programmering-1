@@ -24,6 +24,7 @@ public class test {
             case 2:
                 noe = sc.nextLine();
                 obj.finn(noe);
+                riktig = obj.finner.get(0);
                 System.out.println(obj.retter.get(riktig));
                 System.out.println(obj.oppskrift.get(riktig));
                 System.out.println(obj.priser.get(riktig));
@@ -32,14 +33,10 @@ public class test {
             case 3:
                 noe = sc.nextLine();
                 obj.FinnTyper(noe);
-                System.out.println(obj.mengde);
-                //for (int j = 0; j<obj.retter.size(); j++){
-                    //if(j == obj.mengde.get(j)){
-                        //System.out.println(obj.retter.get(j));
-                    //}
-                    //else;
-
-                //}
+                for (int l = 0; l<obj.mengde.size(); l++){
+                   System.out.println(obj.retter.get(obj.mengde.get(l)));
+                }
+                break;
 
             default:
                 run = false;

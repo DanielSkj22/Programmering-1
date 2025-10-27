@@ -5,6 +5,7 @@ public class MenyRegister {
     public ArrayList<String> oppskrift = new ArrayList<>();
     public ArrayList<String> typer = new ArrayList<>();
     public ArrayList<Integer> priser = new ArrayList<>();
+    public ArrayList<Integer> finner = new ArrayList<>();
     public ArrayList<Integer> mengde = new ArrayList<>();
 
     
@@ -16,17 +17,18 @@ public class MenyRegister {
     }
     public void finn(String noe){
         for (int i = 0; i<retter.size(); i++){
-            if(retter.contains(noe)){
-                int riktig = i;
+            String nei = retter.get(i);
+            if(nei.equals(noe)){
+                finner.add(i);
             }
         }
     }
     public void FinnTyper(String noe){
-        for (int i = 0; i<typer.size(); i++){
-            if(typer.contains(noe)){
-                mengde.add(i);
+        for (int j = 0; j<retter.size();j++){
+            String ja = typer.get(j);
+            if(ja.equals(noe)){
+                mengde.add(j);
             }
-            else;
         }
     }
 }
