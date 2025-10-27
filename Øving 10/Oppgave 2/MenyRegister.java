@@ -1,23 +1,15 @@
 import java.util.ArrayList;
 
 public class MenyRegister {
-    private ArrayList<String> forret = new ArrayList<String>();
-    private ArrayList<String> hoved = new ArrayList<String>();
-    private ArrayList<String> dessert = new ArrayList<String>();
-    private String rett;
-    
-    public void NyRett(){
-        int input = 0;
-        switch (input) {
-            case 1:
-                forret.add(rett);
-                break;
-            case 2: 
-                hoved.add(rett);
-            case 3:
-                dessert.add(rett);
-            default:
-                break;
-        }
+    public ArrayList<String> retter = new ArrayList<>();
+    public ArrayList<String> oppskrift = new ArrayList<>();
+    public ArrayList<String> typer = new ArrayList<>();
+    public ArrayList<Integer> priser = new ArrayList<>();
+    public void NyRett(String rett, String opp, int pris, String type){
+        retter.add(rett);
+        oppskrift.add(opp);
+        priser.add(pris);
+        typer.add(type);
+
     }
 }
