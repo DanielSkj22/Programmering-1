@@ -7,6 +7,8 @@ public class MenyRegister {
     public ArrayList<Integer> priser = new ArrayList<>();
     public ArrayList<Integer> finner = new ArrayList<>();
     public ArrayList<Integer> mengde = new ArrayList<>();
+    public ArrayList<String> meny = new ArrayList<>();
+    public ArrayList<Integer> menypris = new ArrayList<>();
 
     
     public void NyRett(String rett, String opp, int pris, String type){
@@ -30,5 +32,9 @@ public class MenyRegister {
                 mengde.add(j);
             }
         }
+    }
+    public void Menyer(int valg){
+        meny.add(retter.get(valg));
+        menypris.add(priser.get(valg));
     }
 }
