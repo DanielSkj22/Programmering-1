@@ -8,8 +8,6 @@ public class MenyRegister {
     public ArrayList<Integer> finner = new ArrayList<>();
     public ArrayList<Integer> mengde = new ArrayList<>();
     public ArrayList<String> meny = new ArrayList<>();
-    public ArrayList<Integer> menypris = new ArrayList<>();
-
     
     public void NyRett(String rett, String opp, int pris, String type){
         retter.add(rett);
@@ -17,7 +15,6 @@ public class MenyRegister {
         priser.add(pris);
         typer.add(type);
         meny.add(rett);
-        menypris.add(0);
     }
     public void finn(String noe){
         for (int i = 0; i<retter.size(); i++){
@@ -41,14 +38,9 @@ public class MenyRegister {
             if (hva.equals(retter.get(valg))){
                 meny.add(i, navn);
                 meny.remove(i+1);
-                menypris.add(i, priser.get(i));
-                menypris.remove(i+1);
             }
         }
     }
     public void MenyPris(){
-        for (int i = 0; i<meny.size(); i++){
-            
-        }
     }
 }
