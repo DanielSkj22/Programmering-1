@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class Arrangement{
-    private ArrayList<String> Navn = new ArrayList<>();
-    private ArrayList<String> Sted = new ArrayList<>();
-    private ArrayList<String> Arrangør = new ArrayList<>();
-    private ArrayList<String> Type = new ArrayList<>();
-    private ArrayList<Integer> Tidspunkt = new ArrayList<>();
+    public ArrayList<String> Navn = new ArrayList<>();
+    public ArrayList<String> Sted = new ArrayList<>();
+    public ArrayList<String> Arrangør = new ArrayList<>();
+    public ArrayList<String> Type = new ArrayList<>();
+    public ArrayList<Integer> Tidspunkt = new ArrayList<>();
 
     public void setNavn(String navn){
         Navn.add(navn);
