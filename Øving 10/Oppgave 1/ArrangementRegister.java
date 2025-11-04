@@ -4,7 +4,7 @@ public class ArrangementRegister {
     public ArrayList<Integer> søk = new ArrayList<Integer>();
     Arrangement obj = new Arrangement();
 
-    public void nyArr(String navn, String sted, String arr, String type, int tid ){
+    public void nyArr(String navn, String sted, String arr, String type, Long tid ){
         obj.Navn.add(navn);
         obj.Sted.add(sted);
         obj.Arrangør.add(arr);
@@ -23,7 +23,7 @@ public class ArrangementRegister {
     public ArrayList<String> getType(){
         return obj.Type;
     }
-    public ArrayList<Integer> getTids(){
+    public ArrayList<Long> getTids(){
         return obj.Tidspunkt;
     }
     public ArrayList<Integer> getSø(){
@@ -37,17 +37,28 @@ public class ArrangementRegister {
             }
         }
     }
-    public void søkTid(int sl){
+    public void søkTid(Long sl, Long sp){
         obj.sø.clear();
         for (int i = 0; i < obj.Sted.size(); i++){
-            if (obj.Tidspunkt.get(i).equals(sl)){
+            if (obj.Tidspunkt.get(i)>sl && obj.Tidspunkt.get(i)<sp){
                 obj.sø.add(i);
             }
         }
     }
+    public void mellomTid(Long sl, Long sp){
+        obj.sø.clear();
+        for (int i = 0; i < obj.Sted.size(); i++){
+            if (obj.Tidspunkt.get(i)>sl && obj.Tidspunkt.get(i)<sp){
+                obj.sø.add(i);
+            }
+        }
+        for (int j = 0; j < obj.sø.size(); j++){
+            if (obj.Tidspunkt.get(j))
+        }
+    }
     public void liste(){
         for (int i = 0; i < obj.Navn.size(); i++){
-            System.out.println(obj.Navn.get(i)+obj.Sted.get(i));
+            System.out.println(obj.Navn.get(i)+" "+obj.Sted.get(i)+" "+obj.Arrangør.get(i)+" "+obj.Type.get(i)+" "+obj.Tidspunkt.get(i));
         }
     }
 

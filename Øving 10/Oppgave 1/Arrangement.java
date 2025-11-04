@@ -5,7 +5,7 @@ public class Arrangement{
     public ArrayList<String> Sted = new ArrayList<>();
     public ArrayList<String> Arrangør = new ArrayList<>();
     public ArrayList<String> Type = new ArrayList<>();
-    public ArrayList<Integer> Tidspunkt = new ArrayList<>();
+    public ArrayList<Long> Tidspunkt = new ArrayList<>();
     public ArrayList<Integer> sø = new ArrayList<>();
 
 
@@ -21,7 +21,7 @@ public class Arrangement{
     public ArrayList<String> getType(){
         return Type;
     }
-    public ArrayList<Integer> getTids(){
+    public ArrayList<Long> getTids(){
         return Tidspunkt;
     }
     public ArrayList<Integer> getSø(){
