@@ -52,9 +52,6 @@ public class ArrangementRegister {
                 obj.sø.add(i);
             }
         }
-        for (int j = 0; j < obj.sø.size(); j++){
-            if (obj.Tidspunkt.get(j))
-        }
     }
     public void liste(){
         for (int i = 0; i < obj.Navn.size(); i++){

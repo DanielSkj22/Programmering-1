@@ -59,7 +59,9 @@ public class test {
                     obj.mellomTid(tid1, tid2);
                     for (int j = 0; j < obj.getSø().size(); j++){
                         int o = obj.getSø().get(j);
-                        System.out.println(obj.getNavn().get(o));
+                        System.out.print(" "+obj.getNavn().get(o));
+                        System.out.println(obj.getTids().get(o));
+                        System.out.println(" ");
                     }
                     break;
                 case 5:
