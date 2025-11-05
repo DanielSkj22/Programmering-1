@@ -50,6 +50,10 @@ public class ArrangementRegister {
         for (int i = 0; i < obj.Sted.size(); i++){
             if (obj.Tidspunkt.get(i)>sl && obj.Tidspunkt.get(i)<sp){
                 obj.sø.add(i);
+                if(obj.Tidspunkt.get(0)>obj.Tidspunkt.get(i)){
+                    obj.sø.remove(i);
+                    obj.sø.addFirst(i);
+                }
             }
         }
     }
