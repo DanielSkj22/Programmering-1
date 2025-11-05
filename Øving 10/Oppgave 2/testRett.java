@@ -79,6 +79,12 @@ public class testRett {
                         System.out.println(mat.meny3);
                         break;
                 }
+                break;
+                case 5:
+                    fiks = sc.nextLine();
+                    int pris1 = sc.nextInt();
+                    int pris2 = sc.nextInt();
+                    mat.mellomPris(pris1, pris2); 
                     break;
                 default:
                     run = false;
