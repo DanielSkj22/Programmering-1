@@ -49,6 +49,7 @@ public class testRett {
                     break;
                 case 4:
                 System.out.println("********************");
+                System.out.println("1 for å legge til meny1 2 for meny2 og 3 for meny3");
                 input = sc.nextInt();
                 fiks = sc.nextLine();
                     switch (input) {
@@ -81,8 +82,11 @@ public class testRett {
                 }
                 break;
                 case 5:
+                    System.out.println("********************");
                     fiks = sc.nextLine();
+                    System.out.println("Fra pris");
                     int pris1 = sc.nextInt();
+                    System.out.println("Til pris");
                     int pris2 = sc.nextInt();
                     mat.mellomPris(pris1, pris2); 
                     break;
