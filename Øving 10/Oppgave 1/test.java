@@ -9,6 +9,7 @@ public class test {
 
         while (run){
         System.out.println("********************");
+        System.out.println("1 for ny, 2 for søke sted, 3 for søke dato, 4 for å finne mellom datoer, 5 for liste");
         int input = sc.nextInt();
             switch (input) {
                 case 1:

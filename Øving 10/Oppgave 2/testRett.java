@@ -12,6 +12,7 @@ public class testRett {
 
         while (run){
         System.out.println("********************");
+        System.out.println("1 for ny rett, 2 for søke rett, 3 for å finne en type, 4 for å lage menyer, 5 for menyer innefor et prisintervall");
         int input = sc.nextInt();
             switch (input) {
                 case 1:
