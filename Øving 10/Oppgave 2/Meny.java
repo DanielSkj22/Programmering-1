@@ -9,7 +9,7 @@ public class Meny {
     public int meny3pris = 0;
     Rett obj;
 
-     public Meny(Rett rett) {
+    public Meny(Rett rett) {
         this.obj = rett;
     }
     public void nyMeny1(int input){
