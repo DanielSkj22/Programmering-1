@@ -8,7 +8,7 @@ public class EiendomsRegister {
     public ArrayList<Integer> getSortering(){
         return sortering;
     }
-    public int antallEiendom(){
+    public int antallEiendom(Eiendom eiendom){
         int antall = eiendom.getNavn().size();
         return antall;
     }
@@ -19,8 +19,22 @@ public class EiendomsRegister {
         }
         return gjennom/eiendom.getAreal().size();
     }
-    public String finnNr(int komune, int gards, int bruks, Eiendom eiendom){
-        finn = eiendom.getNavn().get(0);
-    return finn;
-}
+    public String finnNr(int kommune, int gards, int bruks, Eiendom eiendom){
+          for ( int i = 0; i<eiendom.getAreal().size(); i++){
+            if(eiendom.getKomuneNr().get(i).equals(kommune)&&eiendom.getGardsNr().get(i).equals(gards)&&eiendom.getBruksNr().get(i).equals(bruks)){
+                finn = eiendom.getNavn().get(0);
+            }
+            else{
+                finn = "nei";
+            }
+        }
+        return finn;
+    }
+    public void printing(Eiendom eiendom){
+        System.out.println(eiendom.getNavn());
+        System.out.println(eiendom.getEier());
+        System.out.println(eiendom.getGardsNavn());
+        System.out.println(eiendom.getKomuneNr()+"-"+eiendom.getGardsNr()+"/"+eiendom.getBruksNr());
+        System.out.println(eiendom.getAreal());
+    }
 }
