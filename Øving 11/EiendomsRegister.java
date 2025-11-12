@@ -11,6 +11,13 @@ public class EiendomsRegister {
         int antall = eiendom.getNavn().size();
         return antall;
     }
+    public float gjennomSnitt(){
+        float gjennom = 0;
+        for (int i = 0; i>eiendom.getGardsNavn().size(); i++){
+            gjennom = gjennom + eiendom.getAreal().get(i);
+        }
+        return gjennom/eiendom.getNavn().size();
+    }
     public void Eiendommer(){
         for (int i = 0; i<eiendom.getNavn().size(); i++){
             System.out.println(eiendom.getNavn().get(i)+" "+eiendom.getGardsNavn().get(i)+" "+eiendom.getEier().get(i));
