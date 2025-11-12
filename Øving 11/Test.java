@@ -25,9 +25,7 @@ public class Test {
                     String navn = scanner.nextLine();
                     System.out.println("Eier");
                     String eier = scanner.nextLine();
-                    System.out.println("Gårdsnavn");
-                    String gard = scanner.nextLine();
-                    eiendom.nyEiendomString(navn, eier, gard);
+                    eiendom.nyEiendomString(navn, eier);
                     System.out.println("Kommune nummer");
                     kommune = scanner.nextInt();
                     System.out.println("Gårds nummer");
@@ -56,7 +54,10 @@ public class Test {
                     System.out.println(register.finnNr(kommune, gards, bruks, eiendom));
                     break;
                 case 5:
-                    //finne etter gårtdsnr mange
+                    register.printing(eiendom);
+                    input = scanner.nextInt();
+                    register.finnGårdsNr(eiendom, input);
+                    System.out.println(register.getSortering());
                     break;
                 case 6:
                    System.out.println(register.gjennomSnitt(eiendom)+" m2");

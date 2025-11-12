@@ -6,7 +6,6 @@ public class Eiendom {
     private ArrayList<Integer> gardsNr = new ArrayList<>();
     private ArrayList<Integer> bruksNr = new ArrayList<>();
     private ArrayList<String> eier = new ArrayList<>();
-    private ArrayList<String> gardsNavn = new ArrayList<>();
     private ArrayList<Float> areal = new ArrayList<>();
 
     public Eiendom(){
@@ -14,7 +13,6 @@ public class Eiendom {
         komuneNr = new ArrayList<>();
         gardsNr = new ArrayList<>();
         eier = new ArrayList<>();
-        gardsNavn = new ArrayList<>();
         areal = new ArrayList<>();
         bruksNr = new ArrayList<>();
     }
@@ -23,9 +21,6 @@ public class Eiendom {
     }
     public ArrayList<String>getEier(){
         return eier;
-    }
-    public ArrayList<String>getGardsNavn(){
-        return gardsNavn;
     }
     public ArrayList<Integer>getKomuneNr(){
         return komuneNr;
@@ -39,10 +34,9 @@ public class Eiendom {
     public ArrayList<Float>getAreal(){
         return areal;
     }
-    public void nyEiendomString(String Navn, String Eier, String Gard){
+    public void nyEiendomString(String Navn, String Eier){
         navn.add(Navn);
         eier.add(Eier);
-        gardsNavn.add(Gard);
     }
     public void nyEiendomInt(int komunenr, int gardsnr, int bruksnr, float Areal){
         komuneNr.add(komunenr);
@@ -53,7 +47,6 @@ public class Eiendom {
     public void slettEiendom(int tall){
         navn.remove(tall);
         eier.remove(tall);
-        gardsNavn.remove(tall);
         komuneNr.remove(tall);
         gardsNr.remove(tall);
         bruksNr.remove(tall);
