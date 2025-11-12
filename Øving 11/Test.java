@@ -37,6 +37,7 @@ public class Test {
                     break;
                 case 5:
                     //feil
+                    System.out.println(eiendom.getAreal());
                     register.gjennomSnitt();
                     break;
                 default:
