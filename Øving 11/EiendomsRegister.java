@@ -49,6 +49,7 @@ public class EiendomsRegister {
             System.out.println(eiendom.getEier().get(i));
             System.out.println(eiendom.getKomuneNr().get(i)+"-"+eiendom.getGardsNr().get(i)+"/"+eiendom.getBruksNr().get(i));
             System.out.println(eiendom.getAreal().get(i));
+            System.out.println("***************");
     }
 }
 }
