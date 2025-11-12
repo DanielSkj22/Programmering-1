@@ -57,7 +57,6 @@ public class Test {
                     register.printing(eiendom);
                     input = scanner.nextInt();
                     register.finnGårdsNr(eiendom, input);
-                    System.out.println(register.getSortering());
                     break;
                 case 6:
                    System.out.println(register.gjennomSnitt(eiendom)+" m2");
