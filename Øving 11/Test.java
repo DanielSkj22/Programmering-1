@@ -4,7 +4,7 @@ public class Test {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Eiendom eiendom = new Eiendom();
-        EiendomsRegister register = new EiendomsRegister();
+        EiendomsRegister register = new EiendomsRegister(eiendom);
         String fiks;
         boolean run = true;
 
@@ -13,10 +13,10 @@ public class Test {
             switch (input) {
                 case 1:
                     fiks = scanner.nextLine();
-                    String navn = scanner.nextLine();
-                    String eier = scanner.nextLine();
-                    String gard = scanner.nextLine();
-                    eiendom.nyEiendomString(navn, eier, gard);
+                    //String navn = scanner.nextLine();
+                    //String eier = scanner.nextLine();
+                    //String gard = scanner.nextLine();
+                    //eiendom.nyEiendomString(navn, eier, gard);
                     int kommune = scanner.nextInt();
                     int gards = scanner.nextInt();
                     int bruks = scanner.nextInt();
@@ -32,11 +32,12 @@ public class Test {
                     break;
                 case 4:
                 //finne etter numre
+                    System.out.println(eiendom.getAreal());
+                    System.out.println(eiendom.getAreal().get(0));
                     break;
                 case 5:
-                    float inputs = scanner.nextFloat();
-                    eiendom.getAreal().add(inputs);
-                    System.out.println(register.gjennomSnitt());
+                    //feil
+                    register.gjennomSnitt();
                     break;
                 default:
                     scanner.close();
