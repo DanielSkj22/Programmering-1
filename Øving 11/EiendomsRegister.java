@@ -2,12 +2,9 @@ import java.util.ArrayList;
 
 public class EiendomsRegister {
     Eiendom eiendom = new Eiendom();
-    Eiendom obj;
     private ArrayList<Integer> sortering = new ArrayList<>();
+    private String finn;
 
-    public EiendomsRegister(Eiendom eiendom){
-        this.obj = eiendom;
-    }
     public ArrayList<Integer> getSortering(){
         return sortering;
     }
@@ -15,11 +12,15 @@ public class EiendomsRegister {
         int antall = eiendom.getNavn().size();
         return antall;
     }
-    public void gjennomSnitt(){
+    public float gjennomSnitt(Eiendom eiendom){
         float gjennom = 0;
         for ( int i = 0; i<eiendom.getAreal().size(); i++){
             gjennom += eiendom.getAreal().get(i);
         }
-        System.out.println(gjennom);
+        return gjennom/eiendom.getAreal().size();
     }
+    public String finnNr(int komune, int gards, int bruks, Eiendom eiendom){
+        finn = eiendom.getNavn().get(0);
+    return finn;
+}
 }
