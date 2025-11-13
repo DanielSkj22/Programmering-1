@@ -62,6 +62,7 @@ public class Test {
                    System.out.println(register.gjennomSnitt(eiendom)+" m2");
                     break;
                 case 7:
+                    System.out.println("************");
                     register.printing(eiendom);
                     break;
                 default:
